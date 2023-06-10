@@ -1,0 +1,76 @@
+/* ==========================================================================
+   SOCS's custom styles
+   ========================================================================== */
+
+#divMessages{
+    border-style:groove;
+    border-width:2px;
+    border-radius: 5px;
+}
+
+div:hover#hover_link{
+    color: #0088cc;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*
+#navbar{
+    opacity: 0.9;
+}
+*/
+
+.center-text{
+    text-align: center;
+}
+
+.socs-welcome{
+    background-color: transparent; 
+    /*padding-bottom: 145px;*/
+    padding-left: 75px;
+    text-shadow: inherit;
+}
+
+ul.nav #dropdown-hover:hover ul.dropdown-menu{
+    display: block;
+}
+
+.navbar .navbar-inner .select2-container{
+    padding-top: 5px;
+}
+
+.form-inline .select2-container{
+    padding-bottom: 10px;
+}
+
+.icon-tail{
+    font-size: 8px;
+}
+/* Home Page Styles*/
+
+.carousel-caption h1,
+.carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+.carousel-caption .btn {
+    margin-top: 10px;
+}
+
+.carousel-images, .carousel-size{
+    width: 1200px; 
+    height: 300px;
+}
+
+/* Student's Page Styles */
+
+.progress .bar {
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -ms-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
