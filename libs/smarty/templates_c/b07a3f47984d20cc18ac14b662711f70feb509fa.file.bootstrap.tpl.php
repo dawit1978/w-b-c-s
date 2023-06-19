@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2023-06-19 12:25:55
+<?php /* Smarty version Smarty-3.1.12, created on 2023-06-19 14:36:58
          compiled from "C:wamp\www\wbcms\w-b-c-s\views\templates\bootstrap.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:142206486edbecca178-43444707%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b07a3f47984d20cc18ac14b662711f70feb509fa' => 
     array (
       0 => 'C:wamp\\www\\wbcms\\w-b-c-s\\views\\templates\\bootstrap.tpl',
-      1 => 1687177552,
+      1 => 1687185403,
       2 => 'file',
     ),
   ),
@@ -50,7 +50,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title><?php echo $_smarty_tpl->tpl_vars['page_name']->value;?>
- - Student Online Clearance System</title>
+ - Web Based Clearance Management System</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     

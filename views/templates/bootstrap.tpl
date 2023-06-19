@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{$page_name} - Student Online Clearance System</title>
+    <title>{$page_name} - Web Based Clearance Management System</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     {* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.css" integrity="sha512-Fik9pU5hBUfoYn2t6ApwzFypxHnCXco3i5u+xgHcBw7WFm0LI8umZ4dcZ7XYj9b9AXCQbll9Xre4dpzKh4nvAQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> *}
