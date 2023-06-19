@@ -12,17 +12,49 @@
     <title>{$page_name} - Student Online Clearance System</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    {* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.css" integrity="sha512-Fik9pU5hBUfoYn2t6ApwzFypxHnCXco3i5u+xgHcBw7WFm0LI8umZ4dcZ7XYj9b9AXCQbll9Xre4dpzKh4nvAQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> *}
+    {* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css" integrity="sha512-4p9BaBwuA5E3w3mOrlv7yFHn6upnXQ4QbjZebGFhqGnM/hUHAFuR1SpRymnLhqWrWv9sGwPI0B6S6CUfHUuSaw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> *}
+    {* <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js" integrity="sha512-28e47INXBDaAH0F91T8tup57lcH+iIqq9Fefp6/p+6cgF7RKnqIMSmZqZKceq7WWo9upYMBLMYyMsFq7zHGlug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> *}
     <link rel="stylesheet" href="{$host}/public/css/bootstrap.css">
     <link rel="stylesheet" href="{$host}/public/css/font-awesome.css">
     <link rel="stylesheet" href="{$host}/public/css/font-awesome-ext.css">
-    <link rel="stylesheet" href="{$host}/public/css/bootstrap-fileupload.css">
+    {* <link rel="stylesheet" href="{$host}/public/css/bootstrap-fileupload.css"> *}
     <link rel="stylesheet" href="{$host}/public/select2/select2.css">
     <link rel="stylesheet" href="{$host}/public/socs-icons/socs-icons.css">
+    <style type="text/css">
+   
+
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+
+    </style>
     <style>
         @media (min-width: 480px) {
 
             body {
-                background-image: url('{$host}/public/img/background.png');
+                /* background-image: url('{$host}/public/img/background.png'); */
             }
 
             .socs-content {
@@ -64,7 +96,7 @@
             background-repeat: no-repeat;
         }
     </style>
-    <link rel="stylesheet" href="{$host}/public/css/bootstrap-responsive.css">
+    {* <link rel="stylesheet" href="{$host}/public/css/bootstrap-responsive.css"> *}
     <link rel="stylesheet" href="{$host}/public/css/main.css">
 
     <script src="{$host}/public/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -81,15 +113,16 @@
 
     {include file='UIsections.tpl'}
 
-    <div class="navbar navbar-inverse navbar-fixed-top" id="navbar">
-        <div class="navbar-inner">
+    <div class="navbar navbar-inverse navbar-fixed-top navbar-dark bg-primary" id="navbar">
+        <div class="navbar-inner "style="background-color:yellow !important;>
             <div class="container">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="index.php"><img src="{$host}/public/img/logo.png"> SOCS{*{$page_name}*}</a>
+                <a class="brand" href="#"><img src="{$host}/public/img/fg.png"></a>
+
                 <div class="nav-collapse collapse">
 
                     {if isset($username)}
@@ -120,16 +153,23 @@
                                 <input class="span2" type="password" placeholder="Password" name="password" required>
                                 <button type="submit" class="btn"><i class="icon-check"></i> Sign in</button>
                             </form>
+
                         {/if}
 
                     {else}
                         {call name=welcome_navigations}
 
                         <form class="navbar-form pull-right" action="index.php?action=login" method="post">
+                        <div class="control-group" style="margin-right: 20px;">
                             <input class="span2" type="text" placeholder="Username" name="username" required>
                             <input class="span2" type="password" placeholder="Password" name="password" required>
                             <button type="submit" class="btn"><i class="icon-check"></i> Sign in</button>
+
+                        </div>
+                          
                         </form>
+
+                      
                     {/if}
 
                 </div>
@@ -171,8 +211,8 @@
         <hr>
 
         <footer>
-            <p>&copy; Micolink Information Technology College - Department of Computer Science - Student Online
-                Clearance System {$smarty.now|date_format: "%Y"}</p>
+            <p>&copy; Micolink Information Technology College - Department of Computer Science - Web-Based
+                Clearance Management System {$smarty.now|date_format: "%Y"}</p>
         </footer>
 
     </div>

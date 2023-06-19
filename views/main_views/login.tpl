@@ -15,7 +15,8 @@
 
 <div class="row">
     <div class="span3">
-        <img src="{$host}/public/img/title.png" />
+        <img src="{$host}/public/img/fg.png" />
+        <img src="{$host}/public/img/m5.jpg" />
     </div>
     <div class="span5">
         <form action="index.php?action=login" method="post" class="form-horizontal">

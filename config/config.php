@@ -11,8 +11,8 @@ define('SERVER', 'localhost');                      //server
 define('USERNAME', 'root');                 // username
 define('PASSWORD', '');                 // password
 define('DATABASE', 'socs');                  // database name
-define('PATH', "C:wamp/www/student-online-clearance-system-master/SOCS/");      //project root
-define('HOST', "http://localhost/student-online-clearance-system-master/SOCS/");              //host url
+define('PATH', "C:wamp/www/wbcms/w-b-c-s/");      //project root
+define('HOST', "http://localhost/wbcms/w-b-c-s/");              //host url
 
 
 // socs global settings (for hosting)

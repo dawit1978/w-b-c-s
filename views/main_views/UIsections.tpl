@@ -1,13 +1,36 @@
 <!-- Welcome Navigations-->
 {function name=welcome_navigations}
     <ul class="nav">
-        <li>
-            <a href="index.php">Home</a>
-        </li>
-        <li>
-            <a href="index.php?action=student_registrationForm">Register</a>
-        </li>
+       
     </ul>
+
+    <div class="nav-collapse collapse"style="margin-top:30px !important">
+        <ul class="nav">
+        <li> <a href="index.php">Home</a></li>
+         
+         <li><a href="index.php?action=student_registrationForm">Register</a></li>
+           <!-- Read about Bootstrap dropdowns at https://getbootstrap.com/2.3.2/javascript.html#dropdowns -->
+            <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+             <ul class="dropdown-menu" style="width: 300px;">
+             <div class="container">
+             <form class="form-signin"style="margin:0!important;width:300px!important">
+                <h2 class="form-signin-heading">Please sign in</h2>
+                    {* <input type="text" class="input-block-level" placeholder="Email address">
+                    <input type="password" class="input-block-level" placeholder="Password"> *}
+                    {* ---------------signin-------- *}
+
+                    {* --------------------------------- *}
+                    <label class="checkbox">
+                    <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+        </form>
+       </div>
+      </ul>
+     </li>
+   </ul>
+  </div><!--/.nav-collapse -->
 {/function}
 
 <!-- Admin Navigations-->
